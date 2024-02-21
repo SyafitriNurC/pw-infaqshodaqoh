@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('tanggal_bayar');
             $table->string('bukti_bayar');
             $table->text('catatan');
+            $table->bigInteger('nominal');
             $table->enum('status', ['pending', 'approved', 'failed'])->default('pending');
             $table->timestamps();
 
