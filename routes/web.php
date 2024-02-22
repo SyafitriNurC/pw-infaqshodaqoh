@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\landingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [landingController::class, 'landing']);
+Route::get('/login', [landingController::class, 'login'])->name('login');
+Route::get('/user/dashboard', [landingController::class, 'userDashboard'])->name('dashboard.userDashboard.template');

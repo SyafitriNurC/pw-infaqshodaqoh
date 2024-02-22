@@ -1,0 +1,36 @@
+/* dashboard.css */
+
+/* Gaya untuk sidebar */
+.sidebar {
+    background-color: blue;
+    color: #fff;
+    padding: 40px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #ccc;
+}
+
+/* Gaya untuk konten utama */
+.container-fluid {
+    padding-top: 20px;
+}
+
+/* Gaya untuk header */
+.navbar {
+    margin-bottom: 20px;
+}
