@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('nama_pengirim');
             $table->string('bank');
-            $table->string('tanggal_bayar');
+            $table->string('periode_bayar');
             $table->string('bukti_bayar');
             $table->text('catatan');
             $table->bigInteger('nominal');

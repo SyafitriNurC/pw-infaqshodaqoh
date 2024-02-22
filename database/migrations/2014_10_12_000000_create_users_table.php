@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('nis')->unique()->nullable();
             $table->string('nama');
-            $table->string('rombel');
-            $table->string('username')->unique();
+            $table->string('rombel')->nullable();
+            $table->string('username');
             $table->string('password');
             $table->string('jumlah')->nullable();
             $table->enum('role', ['admin', 'user'])->default('user');

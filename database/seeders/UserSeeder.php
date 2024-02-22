@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,18 +15,17 @@ class UserSeeder extends Seeder
     {
         $users = [
             [
-                'nama' => 'Admin Wikrama',
                 'username' => 'admin_infaq',
                 'password' => bcrypt('infaq123'),
                 'role' => 'admin',
                 'nis' => null,
-                'nama' => null,
+                'nama' => 'Admin Wikrama',
                 'rombel' => null,
                 'jumlah' => null
             ],
 
             [
-                'username' => '12108301-ali',
+                'username' => '12108302-ali',
                 'password' => bcrypt('ali301'),
                 'role' => 'user',
                 'nis' => '12108301',
@@ -70,5 +70,9 @@ class UserSeeder extends Seeder
                 'jumlah' => '23.000'
             ],
         ];
+
+        foreach ($users as $user) {
+            User::create($user);
+        }
     }
 }
