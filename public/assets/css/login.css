@@ -1,0 +1,195 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 80px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/bglogin.png");
+  background-size: cover;
+  position: relative;
+}
+
+/* body::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.1); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.login-container {
+    display: flex;
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    /* Menggunakan display flex untuk menempatkan elemen secara berdampingan */
+    align-items: center;
+    /* Untuk menengahkan vertikal elemen di dalam container */
+}
+
+h1 {
+    margin-right: 20px;
+    /* Jarak antara h1 dan form login */
+}
+
+.form-container {
+    flex: 1;
+    /* Untuk membuat form login memanfaatkan sisa ruang yang tersedia */
+}
+
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.form-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.selamat-datang-di-wikrama-berinfaq {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.selamat-datang-di-wikrama-berinfaq-span {
+    color: #2e4b60;
+    font: 700 16px "Poppins", sans-serif;
+}
+
+.selamat-datang-di-wikrama-berinfaq-span2 {
+    color: #00233d;
+    font: 800 22px "Poppins", sans-serif;
+}
+
+.selamat-datang {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.selamat-datang2 {
+    color: #2e4b60;
+    font: 700 35px "Poppins", sans-serif;
+}
+
+.selamat-datang1 {
+    color: #00233d;
+    font: 800 25px "Poppins", sans-serif;
+}
+
+.input-container {
+    margin-right: 20px;
+}
+
+.input-container label {
+    color: #8f8f8f;
+    text-align: left;
+    font: 700 14px "Poppins", sans-serif;
+    position: relative;
+    width: 146.4px;
+    height: 24.18px;
+}
+
+.input-container .input-boxes {
+    margin-top: 8px;
+}
+
+.input-container .input-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.input-container .input-box input {
+    height: 100%;
+    width: 90%;
+    outline: none;
+    border: none;
+    color: #aaaaaa;
+    font: 500 10px "Poppins", sans-serif;
+    /* padding: 0 30px; */
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid #ccc;
+}
+
+.input-container .input-box i {
+    position: absolute;
+    color: #aaaaaa;
+    font-size: 18px;
+}
+
+.form-container button {
+    background: #00233d;
+    border-radius: 12px;
+    width: 100px;
+    height: 40px;
+    color: #ffffff;
+    font: 450 15px "Poppins", sans-serif;
+    position: relative;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #001828;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-family: 'Font Awesome 5 Free';
+}
+
+.toggle-password[aria-pressed="false"]::before {
+    content: "\f06e";
+}
+
+.toggle-password[aria-pressed="true"]::before {
+    content: "\f06d";
+}
+
+
+.input-container .input-box input:focus {
+    border-color: #00233d;
+    color: #00233d;
+}
+
+.input-container .input-box input:focus::placeholder {
+    color: #00233d;
+}
+
+.input-container .input-box input:focus+.toggle-password {
+    color: #00233d;
+}
